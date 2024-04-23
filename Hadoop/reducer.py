@@ -15,6 +15,7 @@ for line in sys.stdin:
 	word, count = line.split('\t', 1) 
 	# convert count (currently a string) to int 
 	try: 
+		count = int(count)
                 temp_list.append(word)
  
 	except ValueError: 

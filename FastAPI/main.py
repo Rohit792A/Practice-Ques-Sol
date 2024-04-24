@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from database import Book as DBBook, get_db  # Import the SQLAlchemy Book model as DBBook to avoid confusion
+from database import Book as DBBook, get_db  # Import the SQLAlchemy Book model as DBBook 
 
-class BookCreate(BaseModel):  # Define a Pydantic model to handle book creation requests
+class BookCreate(BaseModel):  # Pydantic model to handle book creation requests
     title: str
     author: str
 
